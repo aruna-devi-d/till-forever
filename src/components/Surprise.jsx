@@ -26,18 +26,19 @@ export default function Surprise() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1 }}
-            onClick={() => setOpened(true)}
             className="cursor-pointer relative w-52 h-40 bg-rose-400 rounded-tl-xl rounded-tr-xl overflow-hidden shadow-lg mx-auto"
           >
+            {/* Envelope Flap */}
             <motion.div
               initial={{ rotateX: 0 }}
               animate={{ rotateX: 180 }}
               transition={{ duration: 1.5, delay: 0.3 }}
-              className="absolute top-0 left-0 w-full h-full bg-rose-500 origin-top transform rotate-x-0"
-            ></motion.div>
+              className="absolute top-0 left-0 w-full h-full bg-rose-500 origin-top transform"
+            />
+
             <button
-              className="absolute bottom-4 w-full text-center text-white font-bold text-xl bg-transparent cursor-pointer"
               onClick={() => setOpened(true)}
+              className="romantic-button text-2xl md:text-3xl px-12 py-5 font-extrabold shadow-2xl"
             >
               Click to Open 💌
             </button>
