@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
-    "framer-motion": "^12.19.1",
+    "framer-motion": "^12.19.2",
     "lottie-react": "^2.4.1",
     "react": "^19.1.0",
     "react-confetti": "^6.4.0",
