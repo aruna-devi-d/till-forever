@@ -35,9 +35,12 @@ export default function Surprise() {
               transition={{ duration: 1.5, delay: 0.3 }}
               className="absolute top-0 left-0 w-full h-full bg-rose-500 origin-top transform rotate-x-0"
             ></motion.div>
-            <div className="absolute bottom-4 w-full text-center text-white font-bold text-xl">
+            <button
+              className="absolute bottom-4 w-full text-center text-white font-bold text-xl bg-transparent cursor-pointer"
+              onClick={() => setOpened(true)}
+            >
               Click to Open 💌
-            </div>
+            </button>
           </motion.div>
         ) : (
           // 💖 Opened Love Letter
